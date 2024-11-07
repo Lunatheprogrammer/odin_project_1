@@ -1,0 +1,217 @@
+* {
+  /*outline: 1px solid black;*/
+  margin: 0;
+  padding: 0;
+}
+.topnav {
+  display: flex;
+  background-color: #1f2937;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 10px 200px; /* Adds padding for space around the navbar */
+  align-items: center; /* Vertically centers all items in the navbar */
+}
+
+.topnav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.topnav a.active {
+  font-weight: bold;
+  font-size: 24px;
+  color: #f9faf8;
+}
+
+.nav-right {
+  display: flex;
+  gap: 15px; /* Adds space between the right links */
+  margin-left: auto; /* Pushes the .nav-right to the right side of the navbar */
+  margin-top: 10px;
+}
+.nav-right a {
+  color: #e5e7eb;
+}
+
+.header {
+  display: flex;
+  background-color: #1f2937;
+  flex-direction: row;
+  padding: 70px 200px;
+}
+
+.header-info h1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 500px;
+  margin-bottom: 10px;
+  font-size: 48px;
+  color: #f9faf8;
+  font-weight: 900;
+}
+.header-info p {
+  flex-wrap: wrap;
+  margin-right: 500px;
+  margin-top: -5px;
+  font-size: 18px;
+  color: #e5e7eb;
+}
+.header-info button {
+  padding: 5px 10px;
+  margin-top: 10px;
+  background-color: #3882f6;
+  color: white;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+  transition: 0.7s;
+}
+.header-info button:hover {
+  background-color: #e5e7eb;
+  color: #1f2937;
+  font-weight: bold;
+}
+
+.header img {
+  display: block;
+  margin-left: -465px; /* Keeps image closer to the text */
+  width: 500px; /* Make the image wider */
+  height: 300px;
+  object-fit: cover; /* Ensures the image doesn't stretch or distort */
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the content horizontally */
+  background-color: white;
+  color: #1f2937;
+  padding: 20px; /* Padding around the container */
+  padding-bottom: 80px;
+}
+.main h2 {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 20px; /* Adds space below the header */
+  text-align: center; /* Centers the header text */
+  width: 100%;
+  margin-left: 15px;
+}
+
+.main img {
+  width: 200px; /* Width of each image */
+  height: 200px; /* Height of each image */
+  object-fit: cover; /* Ensures images fill their box without distortion */
+  display: block; /* Ensures images are displayed as block elements */
+  border-style: solid;
+  border-width: 3px;
+  border-color: #3882f6;
+  border-radius: 15px; /* Adds rounded corners to the images */
+  margin-left: 3px; /*keeps imgage closer to the text*/
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between; /* Ensures space between the images */
+  gap: 20px; /* Adds space between images */
+  flex-wrap: wrap; /* Wraps images if screen size is smaller */
+  justify-content: center; /* Centers the images horizontally */
+  width: 100%; /* Ensures images are spaced properly within container */
+}
+
+.image-container figure {
+  margin: 0; /* Removes default margin */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers caption under image */
+}
+.image-container figcaption {
+  text-align: center; /* Centers the caption text */
+  word-wrap: break-word; /* Ensures long words break and wrap */
+  white-space: normal; /* Ensures text wraps normally */
+  margin-top: 10px; /* Adds space between the image and caption */
+  padding: 0 10px;
+  max-width: 215px;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e7eb;
+  padding: 100px 200px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.text {
+  font-size: 36px;
+  font-style: italic;
+  color: #1f2937;
+  font-weight: lighter;
+}
+.author {
+  font-size: 10px;
+  font-weight: 900;
+  text-align: right;
+}
+
+.main3 {
+  display: flex;
+  justify-content: space-between; /* Pushes button to the right */
+  align-items: center; /* Vertically centers button with paragraphs */
+  margin: 100px 200px;
+  padding: 10px 70px;
+  background-color: #3882f6;
+  color: white;
+  border-radius: 10px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column; /* Stack paragraphs vertically */
+  padding: 40px;
+}
+.main3 p {
+  margin: 0; /* Removes default spacing between paragraphs */
+  padding-bottom: 5px; /* Optional: Adds slight space if needed */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.question {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.action {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 100;
+}
+
+.main3 button {
+  margin-left: 20px; /* Adds space between paragraphs and button */
+  padding: 10px 50px;
+  background-color: #3882f6;
+  color: white;
+  border: 2px solid white; /* White border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.9s;
+}
+.main3 button:hover {
+  background-color: #1f2937;
+}
+
+footer {
+  padding: 25px 25px;
+  background-color: #1f2937;
+  text-align: center;
+  color: #f9faf8;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 10px;
+}
